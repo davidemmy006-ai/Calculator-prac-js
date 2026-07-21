@@ -1,0 +1,125 @@
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #dfeec8, #bdf4fc);
+    
+}
+
+.title {
+    font-family: sans-serif;
+    color: #7c7a7a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#edges {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 16px;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-self: center;
+    background-color: #fafafa;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff 0%, #f9d6cc 50%, #f1715b 100%);
+}
+
+#cont {
+    display: flex;
+    flex-direction: row4;
+    align-items: center;
+    justify-content: space-between;
+    gap:5px;
+}
+
+#display{
+    top: 0;
+    border-bottom: solid 1px grey;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+#inputs {
+    width: 96%;
+    height: 100%;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    background-color: rgb(238, 233, 233);
+    margin-right: 4px;
+}
+
+#input > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.res {
+    color: white;
+    background-color: rgb(241, 113, 91);
+    font-size: 30px;
+    padding: 7px 13px 7px 13px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px rgb(167, 166, 166);
+}
+
+.but {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px rgb(161, 158, 158);
+    cursor: pointer;
+}
+
+.but:hover {
+    background-color: #f0f0f0;
+}
+
+.but:active {
+    background-color: #d9d9d9;
+}
+
+.res:hover {
+    background-color: rgb(241, 130, 111);
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 15px;
+    color: #696666;
+    font-family: sans-serif;
+    white-space: nowrap;
+    animation: slideAcross 6s linear infinite;
+}
+
+@keyframes slideAcross {
+    from {
+        left: -100px;
+    }
+    to {
+        left: 100%;
+    }
+}
